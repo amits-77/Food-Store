@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;                     /* for making full corner */
+    padding:0;
+
+}
+
+.sidebar{
+    background-color: rgb(252, 246, 246);
+    /* width: 230px; */
+    font-family: 'Fire Sans' sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav{
+    padding: 45px;
+
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 25px 0;
+    
+
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 80vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infocontainer{
+    /* background-color: rgb(56, 238, 50); */
+    height: 60vh;
+    width: 70vw;
+    margin: 144px auto;
+    margin-left: 144px;
+    display: flex;                                           /* ye content jitne me hai utne me hi rakh leta ha extra place nhi rakhta*/
+   justify-content: space-around;
+}
+
+.devPic img{
+    height: 60vh;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;                          /*cutting row me ya column me */
+}
+
+.Hello{
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.Name{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Fire Sans' sans-serif;
+    
+}
+
+.About{
+    font-size: 30px;
+}
+.moreabout{
+    font-size: 20px;
+    margin-top: 18px;                                   /*give the distance between two lines*/
+    font-family: 'Fire Sans' sans-serif;
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    background: rgb(93, 229, 253);
+    margin-inline: 7px;
+    cursor: pointer;                                 /* give cursor when click on buttons*/
+}
+
+.btn btn :hover{
+    background: rgb(255, 255, 255);
+    color:  rgb(9, 12, 190);
+}
+
+.btn-sm{
+    font-size: 14px;
+    
+}
+
+.contactform{
+    /* padding: 0 34px;
+    padding-top: 144px; */
+    font-family: 'Fire Sans' sans-serif;
+    margin: 60px;
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px;
+}
+
+.contactform form div{
+   padding: 10px 0 0 ;
+   display: flex;
+   flex-direction: column;
+}
+
+.contactform form div input{
+   width: 26vw;
+   border-radius: 5px;
+   margin: 6px 0 0;
+   padding: 3px;
+}
+
+#emailHelp{
+    font-size: 15px;
+    color: blue;
+    margin: 0 5px;
+    padding: 3px 0 0;
+}
+
+#form-check{
+    flex-direction: row;
+
+}
+
+#form-check input{
+width: 25px;
+margin: 5px 0;
+}
+
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Fire Sans' sans-serif;
+    
+}
+
+.blogContainer{
+    margin: 30px;
+}
+
+.blogContainer h1{
+    font-family: 'Fire Sans' sans-serif;
+    margin: 25px;
+    
+}
+.blogItem p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1{
+    margin: 20px;
+    font-family: 'Fire Sans' sans-serif;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+.intro{
+    
+    margin: 60px;
+}
+
+.intro h2{
+    font-family: 'Fire Sans' sans-serif;
+    margin: 12px;
+}
+
+.skillcontainer{
+    padding:12px;
+
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Fire Sans' sans-serif;
+    font-weight: 800px;
+
+}
+
+.skill{
+    width: 255px;
+    height: 7px;
+    background-color: deepskyblue;
+    border: solid;
+
+}
+
+.hundered{
+    width: 256px;
+    background-color: hotpink;
+}
+.fifty{
+    width: 124px;
+}
+
+.t5{
+    width: 78px;
+    background-color: fuchsia;
+}
+
+.sidebarGo{
+    transform: translate(-235px, 10px);
+    position: absolute;
+
+ }
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    left: 7px;
+}
+
+.cross{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+@media(max-width: 1215px) {
+*{
+    /* background-color: rgb(236, 88, 88); */
+}
+.devPic{
+    display: none;
+}
+/* .sidebar{
+    transform: translate(-235px, 10px);
+    position: absolute;
+
+ } */
+ .intro{
+    margin: 50px 8px;
+}
+}
+
+
+body{
+    
+    /* padding-left: 300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-origin: padding-box; */
+    
+}
+
+
+
+.box{
+    background-color: red;
+    height: 750vh;
+}
